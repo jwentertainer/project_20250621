@@ -6,3 +6,4 @@ pandas
 plotly
 gspread
 google-auth
+geopandas
