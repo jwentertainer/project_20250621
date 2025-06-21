@@ -7,3 +7,7 @@ plotly
 gspread
 google-auth
 geopandas
+pyproj
+fiona
+shapely
+rtree
