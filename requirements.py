@@ -6,4 +6,3 @@ pandas
 plotly
 gspread
 google-auth
-beautifulsoup4
