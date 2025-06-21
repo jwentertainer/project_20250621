@@ -8,7 +8,7 @@ from streamlit_folium import folium_static
 st.title("서울시 진학률 지도 시각화")
 
 # CSV 파일 업로드
-uploaded_file = st.file_uploader("growup.csv 파일을 업로드하세요", type="csv")
+uploaded_file = st.file_uploader("growup.csv", type="csv")
 
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
