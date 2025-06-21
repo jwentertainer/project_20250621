@@ -8,12 +8,12 @@ from streamlit_folium import folium_static
 st.title("서울시 진학률 지도 시각화")
 
 # GitHub의 raw CSV URL 입력 (★ 여기를 본인 GitHub CSV 주소로 교체하세요)
-csv_url = "https://raw.githubusercontent.com/jwentertainer/project_20250621/blob/main/growup.csv"
+#csv_url = "https://raw.githubusercontent.com/jwentertainer/project_20250621/blob/main/growup.csv"
 
 # CSV 데이터 불러오기
 @st.cache_data
 def load_data():
-    df = pd.read_csv(csv_url)
+    df = pd.read_csv("growup.csv", encoding="cp949") #csv_url
     return df
 
 df = load_data()
