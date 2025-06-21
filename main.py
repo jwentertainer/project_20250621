@@ -21,7 +21,7 @@ except Exception as e:
 seoul_df = df[df['시도'] == '서울'].copy()
 
 # 필수 컬럼 확인
-required_columns = ['시군구', '진학률', '위도', '경도']
+required_columns = ['시군구', '진학률']
 if not all(col in seoul_df.columns for col in required_columns):
     st.error(f"CSV에 다음 컬럼이 필요합니다: {required_columns}")
     st.write("현재 포함된 컬럼:", list(df.columns))
