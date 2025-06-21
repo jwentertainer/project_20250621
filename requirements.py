@@ -1,13 +1,5 @@
-folium
-streamlit_folium
-
-yfinance
+streamlit
 pandas
-plotly
-gspread
-google-auth
-geopandas
-pyproj
-fiona
-shapely
-rtree
+folium
+streamlit-folium
+requests
