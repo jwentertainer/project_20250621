@@ -18,6 +18,6 @@ st.markdown("""
     }
     </style>
     <div class='proj-title'>
-        프로젝트
+        2024학년도 진학율
     </div>
 """, unsafe_allow_html=True)
