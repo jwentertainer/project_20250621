@@ -1,5 +1,7 @@
 import streamlit as st
 import pandas as pd
+import folium
+from streamlit_folium import st_folium
 
 st.title("growup.csv 데이터 표 시각화")
 
@@ -15,3 +17,11 @@ df_seoul = df[df['시도'] == '서울']
 # 표 출력
 st.subheader("서울 데이터 미리보기")
 st.dataframe(df_seoul)
+
+# folium 지도 준비
+st.subheader("서울시 지도")
+seoul_center = [37.5665, 126.9780]  # 서울시청 위도, 경도
+
+m = folium.Map(location=seoul_center, zoom_start=11)  # 서울 중심부 표시
+
+st_folium(m, width=700, height=500)
