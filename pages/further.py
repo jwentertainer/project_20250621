@@ -102,8 +102,8 @@ for idx, row in df_seoul.iterrows():
             color=get_color(row['진학률']),
             fill=True,
             fill_opacity=0.75,
-            popup=f"<b>{row['구']}</b><br>진학률: {row['진학률']}%",
-            tooltip=row['구']
+            popup=f"<b>{row['시군구']}</b><br>진학률: {row['진학률']}%",
+            tooltip=row['시군구']
         ).add_to(m)
 
 st_folium(m, width=1000, height=500)
