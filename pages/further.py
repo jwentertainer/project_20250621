@@ -3,7 +3,7 @@ import pandas as pd
 import folium
 from streamlit_folium import st_folium
 
-st.title("growup.csv 데이터 표 시각화")
+st.title("지도로 진학률 보기")
 
 # 깃허브 raw csv 파일 URL
 csv_url = "https://raw.githubusercontent.com/jwentertainer/project_20250621/main/growup.csv"
