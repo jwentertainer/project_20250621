@@ -16,12 +16,12 @@ df_seoul = df[df['시도'] == '서울']
 
 # 표 출력
 st.subheader("서울 데이터 미리보기")
-st.dataframe(df_seoul)
+st.dataframe(df_seoul, width=1000)        # 표 가로 크기 지정
 
 # folium 지도 준비
 st.subheader("서울시 지도")
 seoul_center = [37.5665, 126.9780]  # 서울시청 위도, 경도
 
-m = folium.Map(location=seoul_center, zoom_start=11)  # 서울 중심부 표시
+m = folium.Map(location=seoul_center, zoom_start=11)
 
-st_folium(m, width=700, height=500)
+st_folium(m, width=1000, height=500)      # 지도 가로 크기 맞춤
