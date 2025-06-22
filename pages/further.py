@@ -95,14 +95,14 @@ def get_color(rate):
 
 # 지도에 CircleMarker 표시
 for idx, row in df_seoul.iterrows():
-    if pd.notnull(row['위도']) and pd.notnull(row['경도']) and pd.notnull(row['진학율']):
+    if pd.notnull(row['위도']) and pd.notnull(row['경도']) and pd.notnull(row['진학률']):
         folium.CircleMarker(
             location=[row['위도'], row['경도']],
             radius=10,
-            color=get_color(row['진학율']),
+            color=get_color(row['진학률']),
             fill=True,
             fill_opacity=0.75,
-            popup=f"<b>{row['구']}</b><br>진학율: {row['진학율']}%",
+            popup=f"<b>{row['구']}</b><br>진학률: {row['진학률']}%",
             tooltip=row['구']
         ).add_to(m)
 
