@@ -69,8 +69,8 @@ gu_latlon = {
 }
 
 # 구별로 위경도 컬럼 추가
-df_seoul['위도'] = df_seoul['구'].map(lambda x: gu_latlon.get(x, [None, None])[0])
-df_seoul['경도'] = df_seoul['구'].map(lambda x: gu_latlon.get(x, [None, None])[1])
+df_seoul['위도'] = df_seoul['시군구'].map(lambda x: gu_latlon.get(x, [None, None])[0])
+df_seoul['경도'] = df_seoul['시군구'].map(lambda x: gu_latlon.get(x, [None, None])[1])
 
 st.subheader("서울 데이터 미리보기")
 st.dataframe(df_seoul, width=1000)
