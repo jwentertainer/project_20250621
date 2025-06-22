@@ -1,14 +1,23 @@
 import streamlit as st
-import pandas as pd
 
-st.title("growup.csv 데이터 표 시각화")
+st.set_page_config(page_title="프로젝트", page_icon="📁", layout="centered")
 
-# 깃허브 raw csv 파일 URL
-csv_url = "https://raw.githubusercontent.com/jwentertainer/project_20250621/main/growup.csv"
-
-# CSV 파일 읽기
-df = pd.read_csv(csv_url)
-
-# 표 출력
-st.subheader("데이터 미리보기")
-st.dataframe(df)
+st.markdown("""
+    <style>
+    .proj-title {
+        text-align: center;
+        color: #fff;
+        font-size: 6em;
+        font-weight: bold;
+        text-shadow: 2px 2px 10px #1565c0, 0 0 10px #4fc3f7;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    .stApp {
+        background: linear-gradient(135deg, #2196f3 0%, #e3f2fd 100%);
+    }
+    </style>
+    <div class='proj-title'>
+        프로젝트
+    </div>
+""", unsafe_allow_html=True)
