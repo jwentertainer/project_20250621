@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="프로젝트", page_icon="📁", layout="centered")
+st.set_page_config(page_title="2024학년도 진학율", page_icon="📁", layout="centered")
 
 st.markdown("""
     <style>
